@@ -19,7 +19,10 @@ Steps:
 
 - Generate repo from template
 - Turn on GitHub Pages
+- Create a GitHub Project Board
 - Development-strategy file created
+- Write User-stories
+- Make and assign issues
 
 ### 1. Creating UI
 
@@ -47,8 +50,7 @@ Steps:
 - The core logic function was developed
 - It was passed through a set of tests
 - An appropriate handler was developed to use the function interactively.
-- PR was raised, reviewed by two assigned reviewers and the branch
-  was merged to the `master` branch.
+- PR was raised, reviewed by two assigned reviewers and the branch was merged to the `master` branch.
 
 ### 3. Developing `Remove` function and its handler.
 
@@ -63,8 +65,7 @@ Steps:
 - The core logic function was developed
 - It was passed through a set of tests
 - An appropriate handler was developed to use the function interactively.
-- PR was raised, reviewed by two assigned reviewers and the branch
-  was merged to the `master` branch.
+- PR was raised, reviewed by two assigned reviewers and the branch was merged to the `master` branch.
 
 ### 4. Developing `display` function and its handler.
 
@@ -79,8 +80,7 @@ Developing steps are similar to the previous:
 - The core logic function was developed.
 - It was passed through a set of tests.
 - An appropriate handler was developed to use the function interactively.
-- PR was raised, reviewed by two assigned reviewers and the branch.
-  was merged to the `master` branch.
+- PR was raised, reviewed by two assigned reviewers and the branch was merged to the `master` branch.
 
 ### 5. Developing `greater` function and its handler.
 
@@ -95,8 +95,7 @@ Developing steps are similar to the the all project issues which concern JavaScr
 - The core logic function was developed.
 - It was passed through a set of tests.
 - An appropriate handler was developed to use the function interactively.
-- PR was raised, reviewed by two assigned reviewers and the branch.
-  was merged to the `master` branch.
+- PR was raised, reviewed by two assigned reviewers and the branch was merged to the `master` branch.
 
 ### 6. Developing `less` function and its handler.
 
@@ -127,14 +126,17 @@ Developing steps are similar to the the all project issues which concern JavaScr
 - The core logic function was developed.
 - It was passed through a set of tests.
 - An appropriate handler was developed to use the function interactively.
-- PR was raised, reviewed by two assigned reviewers and the branch.
-  was merged to the `master` branch.    
+- PR was raised, reviewed by two assigned reviewers and the branch was merged to the `master` branch.    
 
 ### 8. Writing "readme.md".
 
 #### Assigned to: Galal
 
-- README file was completed in the separate branch `readme` which was reviewed and merged to the `master`
+> README file was completed in the separate branch `readme` which was reviewed and merged to the `master`
+
+- The new repo branch `readme` was generated.
+- Project description was clearly written.
+- PR was raised, reviewed by two assigned reviewers and the branch was merged to the `master` branch.  
 
 ### 9. Finishing Touches
 
