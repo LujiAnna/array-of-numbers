@@ -21,6 +21,12 @@ const removeNumber = (arrOfNumbers, toRemove) => {
   }
 
   // write the logic!
+  for( var i = 0; i < arrOfNumbers.length; i++){ 
+    if ( arrOfNumbers[i] === toRemove) { 
+      arrOfNumbers.splice(i, 1);
+    }
+
+    return arrOfNumbers
 };
 
 
@@ -71,25 +77,25 @@ describe('removeNumber: removes all instances of a number in an array', () => {
 });
 
 
-
+}
 const removeNumberHandler = () => {
   console.log('\n--- calling: remove number handler');
   console.log('numbers (before):', typeof numbers, '\n', numbers);
 
-  const userInput = _;
+  const userInput = prompt('Entry a number you want to remove');
   console.log('userInput:', typeof userInput, '\n', userInput);
-  if (_) {
+  if (isNaN(userInput)) {
     return;
   }
 
-  const userNumber = _;
+  const userNumber = Number(userInput);
   console.log('userNumber:', typeof userNumber, '\n', userNumber);
-  if (_) {
+  if (!numbers.includes(userNumber)) {
     alert(`${userInput} is not a valid number`);
     return;
   }
 
-  numbers = _;
+  numbers = removeNumber(numbers, userNumber);
   console.log('numbers (after):', typeof numbers, '\n', numbers);
 
   displayArrayHandler(numbers, `successfully removed ${userNumber}`);
