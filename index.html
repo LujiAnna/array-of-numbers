@@ -16,6 +16,7 @@
   <script src='./scripts/script-variables.js'></script>
 
   <!-- load the main scripts -->
+  <script src='./scripts/user-actions/menu.js' ></script>
   <script src='./scripts/user-actions/add-number.js'></script>
   <script src='./scripts/user-actions/display-array.js'></script>
   <script src='./scripts/user-actions/find-greater-than.js'></script>
@@ -32,7 +33,7 @@
 <body>
 
   <main>
-    <button onclick='addNumberHandler()'>add a number</button> <br>
+    <!-- <button onclick='addNumberHandler()'>add a number</button> <br>
     <button onclick='removeNumberHandler()'>remove a number</button> <br>
     <button onclick='displayArrayHandler()'>display all numbers</button> <br>
     <br>
@@ -40,8 +41,37 @@
     <button onclick='findLessThanHandler()'>find all numbers less than X</button> <br>
     <button onclick='findAverageHandler()'>find the average of all numbers</button> <br>
     <br>
-    <button onclick='resetHandler()'>reset</button> <br>
+    <button onclick='resetHandler()'>reset</button> <br> -->
+
+    <table class="calculator">
+    <caption> array-of-numbers</caption>
+    <tr>
+          <th colspan="2"><button onclick="menuHandler()">menu</button></th>
+    </tr>
+    <tr>
+          <td colspan="2"><button onclick='resetHandler()'>reset</button> </td>
+    </tr>
+    <tr>
+          <td colspan="2"><button onclick='findAverageHandler()'>average</button></td>
+    </tr>
+    <tr>
+          <td><button onclick='addNumberHandler()'>add#</button></td>
+          <td><button onclick='removeNumberHandler()'>remove#</button></td>
+    </tr>
+    <tr>
+          <td><button onclick='findGreaterThanHandler()'>greater</button></td>
+          <td><button onclick='findLessThanHandler()'>less</button></td>
+    </tr>
+    <tr>
+          <td colspan="2"><button onclick='displayArrayHandler()'>display-array</button> </td>
+    </tr>   
+    </table>
+
   </main>
+
+<footer>
+            <p><a href="https://github.com/LujiAnna/array-of-numbers">/></a></p>
+        </footer>
 
 </body>
 
