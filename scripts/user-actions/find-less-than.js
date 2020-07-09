@@ -18,8 +18,16 @@ const findLessThan = (arrOfNumbers, highValue) => {
   if (typeof highValue !== 'number') {
     throw new TypeError('second parameter must be a number');
   }
+  let lessThan= [];
+  for(let value of arrOfNumbers){
+    ;
+    if(value<highValue){
+      lessThan.push(value);
+    }
+    
+  }
+  return lessThan;
 
-  // write the logic!
 };
 
 
@@ -74,20 +82,20 @@ const findLessThanHandler = () => {
   console.log('\n--- calling: find less than handler');
   console.log('numbers:', typeof numbers, '\n', numbers);
 
-  const userInput = _;
+  const userInput = Number(prompt('Please write a number to see less values:'));
   console.log('userInput:', typeof userInput, '\n', userInput);
-  if (_) {
+  if ((typeof(userInput)!=='number')) {
     return;
   }
 
-  const userNumber = _;
+  const userNumber = userInput;
   console.log('userNumber:', typeof userNumber, '\n', userNumber);
-  if (_) {
+  if ((typeof(userNumber)!=='number')){
     alert(`${userInput} is not a valid number`);
     return;
   }
 
-  const filteredNumbers = _;
+  const filteredNumbers = findLessThan(numbers, userNumber);
   console.log('filteredNumbers:', typeof filteredNumbers, '\n', filteredNumbers);
 
   displayArrayHandler(filteredNumbers, `numbers less than ${userNumber}`);
