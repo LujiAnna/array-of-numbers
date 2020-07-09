@@ -19,8 +19,14 @@ const findGreaterThan = (arrOfNumbers, lowValue) => {
     throw new TypeError('second parameter must be a number');
   }
 
-  // write the logic!
-};
+  // make a new array 
+  let array=[];
+for(let i=0;i<arrOfNumbers.length;i++){
+    if(arrOfNumbers[i]>lowValue)
+    array.push(arrOfNumbers[i]);// copy the value to the new array
+  }
+return array;
+}
 
 
 
@@ -74,15 +80,15 @@ const findGreaterThanHandler = () => {
   console.log('\n--- calling: find greater than handler');
   console.log('numbers:', typeof numbers, '\n', numbers);
 
-  const userInput = _;
+  const userInput = prompt('put the number');
   console.log('userInput:', typeof userInput, '\n', userInput);
-  if (_) {
+  if (userInput===null) {
     return;
   }
 
-  const userNumber = _;
+  const userNumber = Number(userInput);
   console.log('userNumber:', typeof userNumber, '\n', userNumber);
-  if (_) {
+  if (typeof userNumber !=='number') {
     alert(`${userInput} is not a valid number`);
     return;
   }
