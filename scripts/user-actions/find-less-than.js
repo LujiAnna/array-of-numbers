@@ -20,7 +20,7 @@ const findLessThan = (arrOfNumbers, highValue) => {
   }
   let lessThan= [];
   for(let value of arrOfNumbers){
-    ;
+    
     if(value<highValue){
       lessThan.push(value);
     }
