@@ -16,7 +16,7 @@ const reduceForAlert = (arrOfNumbers) => {
     throw new TypeError('parameter must contain only numbers')
   }
 
-  // write the logic!
+  
 };
 
 
